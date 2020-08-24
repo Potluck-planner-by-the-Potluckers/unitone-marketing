@@ -18,25 +18,25 @@ body{
  font-size:1.6rem;
  font-family:'Roboto Mono', monospace;
  line-height:1.25;
- background-color:#4f4f4f;
- color:white;
+ background-color:white;
+ color:#4f4f4f;
 }
  
 h1, h2{
  font-size:6rem;
- letter-spacing:3px;
+ letter-spacing:1px;
  padding:4% 0; 
- background-color:#4f4f4f;
+ background-color:lightblue;
  color:orange;
- text-align:center;
+ text-align:left;
 }
  
 h1:hover{
- color:darkblue;
+ color:black;
 }
  
 h2:hover{
- color:darkblue;
+ color:black;
 }
   
 section{
@@ -47,56 +47,39 @@ section{
 /* HEADER STYLES BEGIN HERE  */
 
 header {
- height:135vh;
- background-color:#215c5c;
- background-repeat:no-repeat;
+ height:160vh;
  background-size:cover;
  background-position:center;
  background-attachment:fixed;
-}
- 
-header nav {
- width:100%;
- background-color:#4f4f4f;
- display:flex;
  justify-content:space-between;
  opacity:0.7;
 }
  
 .links{
-   width:60%;
-   display:flex;
+   display: flex;
    justify-content:space-evenly;
-   align-items:center;
    padding:1% 0;
 }
  
 nav button{
  font-size:1.6rem;
- text-decoration:none;
- letter-spacing:3px;
- background-color:lightgray;
- padding:1%;
- 
+ width: 10%;
+ font-weight:bold;
+ letter-spacing:1px;
+ background-color:lightblue;
+ padding:0.5%;
 }
  
 nav a:hover{
 color:#116767;
 }
- 
-.top section{
-display:flex;
-justify-content:center;
-align-items:center;
-width:100%;
-}
- 
+
 .hero-image{
 width:70%;
 margin:10% 15%;
 margin-top:5%
 }
- 
+
 .hero-image:hover{
 opacity: 0.7;
 }
@@ -107,30 +90,44 @@ opacity: 0.7;
 .highlights{
 display:flex;
 flex-wrap:wrap;
-justify-content:center;
-justify-content:space-around;
 justify-content:space-evenly;
 }
 
+.marketingtext{
+  font-size:3rem;
+  width:60%;
+}
+
+.testimonials{
+  display:flex;
+}
+
 .box{
-margin:3%;
+margin:3% 4%;
 padding:2%;
-border:2px solid white;
+background-color:#4f4f4f;
+color:white;
 text-align:center;
 max-width:100%;
 }
- 
+
+.box h4{
+  font-size:3rem;
+}
+.box img{
+   border:1px dotted white;
+}
 .box img:hover{
 opacity:0.7;
 }
  
 .box p{
 font-weight: bold;
-border:1px dotted white;
 }
 
 /* MAIN MARKETING STYLES END HERE */
 /* LOGIN STYLES HERE */
+
 .login{
     display:flex;
     justify-content:center;
@@ -139,8 +136,7 @@ border:1px dotted white;
     }
      
 .bottom-image{
-    width:70%;
-    margin:10% 15%;
+    width:100%;
     margin-top:5%
     }
      
@@ -151,23 +147,24 @@ border:1px dotted white;
 /** These styles are just for the login form**/
 /* Bordered form */
 form{
-   border: 3px solid #f1f1f1;
+   background-color:#4f4f4f;
+   width:30%;
  }
+
   /* Full-width inputs */
  input[type=text], input[type=password] {
    width: 100%;
-   padding: 12px 20px;
-   margin: 8px 0;
-   display: inline-block;
-   border: 1px solid #ccc;
+   padding: 2% 2%;
+   margin: 1% 0;
+   display: flex;
    box-sizing: border-box;
  }
   /* Set a style for all buttons */
  button {
    background-color: #4CAF50;
    color: white;
-   padding: 14px 20px;
-   margin: 8px 0;
+   padding: 2% 0;
+   margin: 3% 0;
    border: none;
    cursor: pointer;
    width: 100%;
@@ -176,63 +173,39 @@ form{
  button:hover {
    opacity: 0.8;
  }
-  /* Extra style for the cancel button (red) */
- .cancelbtn {
-   width: auto;
-   padding: 10px 18px;
-   background-color: #f44336;
- }
-  /* Center the avatar image inside this container */
- .imgcontainer {
-   text-align: center;
-   margin: 24px 0 12px 0;
- }
-  /* Avatar image */
- img.avatar {
-   width: 40%;
-   border-radius: 50%;
- }
+
   /* Add padding to containers */
  .container {
-   padding: 16px;
- }
-  /* The "Forgot password" text */
- span.psw {
-   float: right;
-   padding-top: 16px;
+   padding:0 5%;
  }
 
 /* LOGIN ENDS HERE */
 /* FOOTER SECTION STYLES HERE */
  
 footer{
-display: flex;
-height:20vh;
-background-color:#E0FFFF;
-padding: 3% 0;
-text-align:center;
+height:50vh;
+justify-content:center;
+justify-content:space-between;
+background-color:#4f4f4f;
+}
+
+footer .links{
+   display: flex;
+   justify-content:space-evenly;
+   padding:1% 0;
 }
  
-.socialmedia{
-padding: 1rem;
-font-size: 3rem;
-width: 5rem;
-text-align: center;
-text-decoration: none;
+footer nav button{
+ font-size:1.6rem;
+ width:10%;
+ font-weight:bold;
+ letter-spacing:1px;
+ background-color:lightblue;
+ padding:0.5%;
 }
  
-.socialmedia:hover {
-opacity: 0.7;
-}
- 
-.fa-facebook {
-background: #3B5998;
-color: white;
-}
- 
-.fa-twitter {
-background: #55ACEE;
-color: white;
+footer nav a:hover{
+color:#116767;
 }
 
 /* FOOTER SECTION ENDS HERE */
@@ -258,37 +231,63 @@ color: white;
 header{
     height:100%;
     }
+  
 h1, h2{
     font-size:3rem;
     }
+  
 header nav{
     display:flex;
     justify-content:center;
     flex-direction:column;
     flex-wrap:nowrap;
        }
-header nav .links{
+  
+header nav .links, footer nav .links{
     flex-direction:column;
     flex-wrap:nowrap;
     justify-content:center;
     margin:20%;
     padding:2% 0;
         }
+  
 .links button{
     justify-content:space-evenly;
     width:100%;
-        }
+    font-size:0.75rem;
+  }
+    
 .hero-image, .bottom-image{
     width:100%;
     margin:5% 5%;
     justify-content:center;
        }
-#highlights .box{
+  
+.highlights{
     justify-content:center;
     flex-direction:column;
     flex-wrap:nowrap;
-    width:35%;
-       }      
+  }
+
+.marketingtext{
+    font-size:2rem;
+  }  
+  
+.testimonials{
+    justify-content:center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    width:55%;
+       } 
+  
+  .box h4{
+    font-size:2rem;
+  }
+  
+  .box{
+    font-size:1rem;
+  }
+  
 footer nav{
  display:flex;
  justify-content:center;
@@ -296,16 +295,3 @@ footer nav{
  flex-wrap:nowrap;
  }
 }
-
-/* 300 PIXELS */
-
-  /* Change styles for span and cancel button on extra small screens */
-  @media screen and (max-width: 300px) {
-    span.psw {
-      display: block;
-      float: none;
-    }
-    .cancelbtn {
-      width: 100%;
-    }
-  }
