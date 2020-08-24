@@ -1,6 +1,8 @@
 /* Add CSS styling here */
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
- 
+
+/* ALL MAIN BODY STYLES HERE */
+
 *{
  box-sizing:border-box;
  padding:0;
@@ -24,8 +26,8 @@ h1, h2{
  font-size:6rem;
  letter-spacing:3px;
  padding:4% 0; 
- background-color:pink;
- color:white;
+ background-color:#4f4f4f;
+ color:orange;
  text-align:center;
 }
  
@@ -36,20 +38,17 @@ h1:hover{
 h2:hover{
  color:darkblue;
 }
- 
-@media (max-width:500px){
-h1, h2{
- font-size:3rem;
-}
-}
- 
+  
 section{
  padding:4% 0;
 }
- 
+
+/* END MAIN BODY STYLES */
+/* HEADER STYLES BEGIN HERE  */
+
 header {
  height:135vh;
- background-color:#E0FFFF;
+ background-color:#215c5c;
  background-repeat:no-repeat;
  background-size:cover;
  background-position:center;
@@ -58,9 +57,10 @@ header {
  
 header nav {
  width:100%;
- background-color:#69bafd;
+ background-color:#4f4f4f;
  display:flex;
  justify-content:space-between;
+ opacity:0.7;
 }
  
 .links{
@@ -75,46 +75,20 @@ nav button{
  font-size:1.6rem;
  text-decoration:none;
  letter-spacing:3px;
- background-color:pink;
+ background-color:lightgray;
  padding:1%;
  
 }
  
 nav a:hover{
-color:#AFEEEE;
+color:#116767;
 }
- 
-@media (max-width:500px){
-header{
- height:100%;
-}
- 
-header nav{
- display:flex;
- justify-content:center;
- flex-direction:column;
- flex-wrap:nowrap;
-}
-header nav .links{
- flex-direction:column;
- flex-wrap:nowrap;
- justify-content:center;
- margin:20%;
- padding:2% 0;
- }
-.links button{
- justify-content:space-evenly;
- width:100%;
- }
-}
- 
-/*nav styles end here*/
  
 .top section{
 display:flex;
 justify-content:center;
 align-items:center;
-width:40%;
+width:100%;
 }
  
 .hero-image{
@@ -126,66 +100,57 @@ margin-top:5%
 .hero-image:hover{
 opacity: 0.7;
 }
+
+/* HEADER STYLES END HERE */
+/* MAIN MARKETING SECTION STYLES HERE */
  
-@media (max-width:500px){
-.hero-image{
- width:100%;
- margin:5% 5%;
- justify-content:center;
-}
-}
- 
-/* End Of Header Styles */
- 
-/* Portfolio Section Styles */
- 
-#portfolio{
+.highlights{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
 justify-content:space-around;
 justify-content:space-evenly;
 }
- 
-.one{
+
+.box{
 margin:3%;
 padding:2%;
 border:2px solid white;
 text-align:center;
 max-width:100%;
- 
 }
  
-.one img:hover{
+.box img:hover{
 opacity:0.7;
 }
  
-.one p{
+.box p{
 font-weight: bold;
 border:1px dotted white;
 }
- 
-@media (max-width:800px){
-#portfolio {
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-justify-content:space-around;
-justify-content:space-evenly;
-}
-}
- 
-@media (max-width:500px){
-#portfolio .one{
- justify-content:center;
- flex-direction:column;
- flex-wrap:nowrap;
- width:35%;
-}
-}
+
+/* MAIN MARKETING STYLES END HERE */
+/* LOGIN STYLES HERE */
+.login{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    }
+     
+.bottom-image{
+    width:70%;
+    margin:10% 15%;
+    margin-top:5%
+    }
+     
+.bottom-image:hover{
+    opacity: 0.7;
+    }
+
 /** These styles are just for the login form**/
 /* Bordered form */
-form {
+form{
    border: 3px solid #f1f1f1;
  }
   /* Full-width inputs */
@@ -236,40 +201,19 @@ form {
    float: right;
    padding-top: 16px;
  }
-  /* Change styles for span and cancel button on extra small screens */
- @media screen and (max-width: 300px) {
-   span.psw {
-     display: block;
-     float: none;
-   }
-   .cancelbtn {
-     width: 100%;
-   }
- }
-/**End of login form styles**/
- 
-/*end of portfolio section*/
- 
-/*footer section styles below*/
+
+/* LOGIN ENDS HERE */
+/* FOOTER SECTION STYLES HERE */
  
 footer{
+display: flex;
 height:20vh;
 background-color:#E0FFFF;
 padding: 3% 0;
 text-align:center;
 }
  
-footer nav{
-display: flex;
-}
- 
-.footermenu button{
-padding:1% 5%;
-margin:0 3%;
-margin-top:1%;
-}
- 
-.fa {
+.socialmedia{
 padding: 1rem;
 font-size: 3rem;
 width: 5rem;
@@ -277,7 +221,7 @@ text-align: center;
 text-decoration: none;
 }
  
-.fa:hover {
+.socialmedia:hover {
 opacity: 0.7;
 }
  
@@ -290,8 +234,61 @@ color: white;
 background: #55ACEE;
 color: white;
 }
- 
+
+/* FOOTER SECTION ENDS HERE */
+
+/* ALL RESPONSIVE DESIGN CSS BELOW */
+
+/* 800 PIXELS */
+
+@media (max-width:800px){
+    #highlights {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    justify-content:space-around;
+    justify-content:space-evenly;
+    }
+    }
+
+/* 500 PIXELS */
+
 @media (max-width:500px){
+
+header{
+    height:100%;
+    }
+h1, h2{
+    font-size:3rem;
+    }
+header nav{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+       }
+header nav .links{
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    margin:20%;
+    padding:2% 0;
+        }
+.links button{
+    justify-content:space-evenly;
+    width:100%;
+        }
+.hero-image, .bottom-image{
+    width:100%;
+    margin:5% 5%;
+    justify-content:center;
+       }
+#highlights .box{
+    justify-content:center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    width:35%;
+       }      
 footer nav{
  display:flex;
  justify-content:center;
@@ -299,3 +296,16 @@ footer nav{
  flex-wrap:nowrap;
  }
 }
+
+/* 300 PIXELS */
+
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
