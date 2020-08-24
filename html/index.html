@@ -1,122 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
  <link rel="stylesheet" href="style/index.css">
 </head>
-
 <body>
- 
- <header>
- <!-- Accessibility Point -->
-   <a class="visually-hidden" href="#main-content"><click here to skip to main content></click></a>
-  
-   <h1>Potluck Planner</h1>
 
- <nav>
- <div class="links">
- <button>
-   <a href="index.html">Home</a>
- </button>
- <button>
-   <a href="about.html">About Us</a>
- </button>
- <button>
-   <a href="product.html">The Product</a>
- </button>
+<header>
+    <!-- Accessibility Point -->
+      <a class="visually-hidden" href="#main-content"><click here to skip to main content></click></a>
+     
+      <h1>Potluck Planner</h1>
+
+      <div class = "logo">
+          <img src="img/PP_logo.png" alt ="Our logo">
+      </div>
+   
+    <nav>
+    <div class="links">
+    <button>
+      <a href="index.html">Home</a>
+    </button>
+    <button>
+      <a href="about.html">About Us</a>
+    </button>
+    <button>
+      <a href="product.html">The Product</a>
+    </button>
+       </div>
+      </nav>
+     
+    <div class="hero-image">
+    <img src="img/potluck_image.jpg" alt="Image of a Potluck">
     </div>
-   </nav>
-<!-- Accessibility Point -->
-  <span id="main-content"></span>
+     
+    </header>
+   <!-- Accessibility Point -->
+     <span id="main-content"></span>
+   
+    <section id="highlights">
+      
+   <div class="main marketing title">
+   <h2>Our Product</h2>
+    </div>
+    
+        <div class ="marketingtext">
+            <h4>
+                Potluck Planner is the most innovative potluck planning tool in use today! We make the process of planning and executing a perfect potluck absolutely painless.
+            </h4>
+        </div>
+    
+      <div class="testimonials">
+    
+          <div class ="box">
+          <img src="https://i.picsum.photos/id/490/200/200.jpg?hmac=7WZhaN9NS8sb08YmpHre_3NGnVUsmH8X5W_GlG2Mry4" alt="Customer One">
+            <h4>Customer One</h4>
+          <p>"We tried the new <b>Potluck Planner</b> and all our friends loved it! Now we will be rotating who plans the next potluck each week."</p>
+          </div>
+     
+          <div class="box">
+            <img src="https://i.picsum.photos/id/652/200/200.jpg?hmac=m_Z74HS-9l6n785rv5t2r3riTmdwuq-Z0rMJz9iHg5g" alt="Customer Two">
+            <h4>Customer Two</h4>
+            <p>"I never thought this was the app that I needed! It is so fun and easy to use, likewise it stores your information for the next time around."</p>
+            </div>
+          </div>
+     
+       </section>
+    
+     <section id = "login">
+          <div class = "bottom-image">
+    <img src="img/potluck_image.jpg"
+     alt="Image of a Potluck">
+                  </div>
+    
+                  <form action="action_page.php" method="post">
+                   
+                      <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                   
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                   
+                        <button type="submit">Login</button>
+                        
+                      </div>
+                    </form>
+    
+              </section>
+     <footer>
+    
+      <nav>
+          <div class="links">
+              <button>
+                <a href="index.html">Home</a>
+              </button>
+              <button>
+                <a href="about.html">About Us</a>
+              </button>
+              <button>
+                <a href="product.html">The Product</a>
+              </button>
+                 </div>
+      </nav>
+    
+    </footer>
 
-  <section id="top section">
-  
- <div class="hero-image">
- <img src="img/potluck_image.jpg" alt="Image of a Potluck">
- </div>
-
-<div class="main marketing title">
-<h2>Our Product</h2>
- </div>
- </section>
-
- </header>
-  
- <section id="highlights">
- 
-     <div class ="marketingtext">
-         <h4>
-             Potluck Planner is the most innovative potluck planning tool in use today! We make the process of planning and executing a perfect potluck absolutely painless.
-         </h4>
-     </div>
- 
-   <div class="testimonials">
- 
-       <div class ="box">
-       <img src="https://i.picsum.photos/id/490/200/200.jpg?hmac=7WZhaN9NS8sb08YmpHre_3NGnVUsmH8X5W_GlG2Mry4" alt="Customer One">
-       <p>We tried the new <b>Potluck Planner</b> and all our friends loved it! Now we will be rotating who plans the next potluck each week.</p>
-       </div>
-  
-       <div class="box">
-         <img src="https://i.picsum.photos/id/652/200/200.jpg?hmac=m_Z74HS-9l6n785rv5t2r3riTmdwuq-Z0rMJz9iHg5g" alt="Customer Two">
-         <p>I never thought this was the app that I needed! It is so fun and easy to use, likewise it stores your information for the next time around.</p>
-         </div>
-       </div>
-  
-    </section>
- 
-           <section id = "login fun">
-               <div class = "bottom-image">
-                   <img src="img/potluck_image.jpg" alt="Image of a Potluck">
-               </div>
- 
-               <form action="action_page.php" method="post">
-                   <div class="imgcontainer">
-                     <img src="img/PP_logo.png" alt="Avatar" class="avatar">
-                   </div>
-                
-                   <div class="container">
-                     <label for="uname"><b>Username</b></label>
-                     <input type="text" placeholder="Enter Username" name="uname" required>
-                
-                     <label for="psw"><b>Password</b></label>
-                     <input type="password" placeholder="Enter Password" name="psw" required>
-                
-                     <button type="submit">Login</button>
-                     <label>
-                       <input type="checkbox" checked="checked" name="remember"> Remember me
-                     </label>
-                   </div>
-                
-                   <div class="container" style="background-color:#f1f1f1">
-                     <button type="button" class="cancelbtn">Cancel</button>
-                     <span class="psw">Forgot <a href="#">password?</a></span>
-                   </div>
-                 </form>
- 
-           </section>
-  <footer>
- 
-   <nav>
-       <div class="links">
-           <button>
-             <a href="index.html">Home</a>
-           </button>
-           <button>
-             <a href="about.html">About Us</a>
-           </button>
-           <button>
-             <a href="product.html">The Product</a>
-           </button>
-              </div>
-   </nav>
- 
-     <div class = "social media">
-     <a href="www.facebook.com" class="fa fa-facebook"></a>
-     <a href="www.twitter.com" class="fa fa-twitter"></a>
-     </div>
- 
- </footer>
- 
-</body>
-</html>
+    </body>
+    </html>
