@@ -46,7 +46,7 @@ section{
 /* END MAIN BODY STYLES */
 /* HEADER STYLES BEGIN HERE  */
 
-header {
+header{
  height:160vh;
  background-size:cover;
  background-position:center;
@@ -54,6 +54,10 @@ header {
  justify-content:space-between;
  opacity:0.7;
 }
+
+.toptop{
+    display: flex;
+  }
  
 .links{
    display: flex;
