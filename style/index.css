@@ -116,11 +116,16 @@ justify-content:space-evenly;
   width:60%;
 }
 
+.marketingtext:hover{
+  color:orange;
+}
+
 .testimonials{
   display:flex;
 }
 
 .box{
+width: 40%;
 margin:3% 4%;
 padding:2%;
 background-color:#4f4f4f;
@@ -132,9 +137,15 @@ max-width:100%;
 .box h4{
   font-size:3rem;
 }
+
+.box h4:hover{
+  color:orange;
+}
+
 .box img{
    border:1px dotted white;
 }
+
 .box img:hover{
 opacity:0.7;
 }
@@ -143,63 +154,55 @@ opacity:0.7;
 font-weight: bold;
 }
 
+.box p:hover{
+color:orange;
+}
+
 /* MAIN MARKETING STYLES END HERE */
 /* LOGIN STYLES HERE */
 
-.login{
+#login{
     display:flex;
-    justify-content:center;
     align-items:center;
-    width:100%;
+    flex-direction:column;
+    max-width:100%;
     }
      
 .bottom-image{
     width:100%;
-    margin-top:5%
     }
      
 .bottom-image:hover{
     opacity: 0.7;
     }
 
-/** These styles are just for the login form**/
-/* Bordered form */
-form{
-   background-color:#4f4f4f;
-   width:30%;
+/** These styles are just for the login container**/
+ 
+ .container {
+   display:flex;
+   aligh-items:center;
+   padding:0 1%;
  }
 
-form p{
-  color:white;
-}
-
-  /* Full-width inputs */
- input[type=text], input[type=password] {
-   width: 100%;
-   padding: 2% 2%;
-   margin: 1% 0;
-   display: flex;
-   box-sizing: border-box;
- }
   /* Set a style for all buttons */
- button {
+ .container button {
    background-color: #4CAF50;
-   color: white;
-   padding: 2% 0;
+   padding: 4% 10%;
    margin: 3% 0;
    border: none;
    cursor: pointer;
-   width: 100%;
+   width:100%;
  }
   /* Add a hover effect for buttons */
- button:hover {
+ .container button:hover {
    opacity: 0.8;
  }
 
-  /* Add padding to containers */
- .container {
-   padding:0 5%;
- }
+.container button a{
+  color:white;
+  font-weight:bold;
+  font-size:2.5rem;
+}
 
 /* LOGIN ENDS HERE */
 /* FOOTER SECTION STYLES HERE */
@@ -316,4 +319,3 @@ footer nav{
  flex-wrap:nowrap;
  }
 }
-
