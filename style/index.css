@@ -122,6 +122,7 @@ justify-content:space-evenly;
 .testimonials{
   display:flex;
   flex-wrap:wrap;
+  justify-content:center;
 }
 
 .box{
@@ -177,34 +178,6 @@ color:orange;
 .bottom-image:hover{
     opacity: 0.7;
     }
-
-/** These styles are just for the login container**/
- 
- .container {
-   display:flex;
-   aligh-items:center;
-   padding:0 1%;
- }
-
-  /* Set a style for all buttons */
- .container button {
-   background-color: #4CAF50;
-   padding: 4% 10%;
-   margin: 3% 0;
-   border: none;
-   cursor: pointer;
-   width:100%;
- }
-  /* Add a hover effect for buttons */
- .container button:hover {
-   opacity: 0.8;
- }
-
-.container button a{
-  color:white;
-  font-weight:bold;
-  font-size:2.5rem;
-}
 
 /* LOGIN ENDS HERE */
 /* FOOTER SECTION STYLES HERE */
