@@ -1,0 +1,295 @@
+/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono&display=swap');
+
+/* ALL MAIN BODY STYLES HERE */
+
+*{
+ box-sizing:border-box;
+ padding:0;
+ margin:0;
+ max-width:100%;
+}
+ 
+html{
+ font-size:62.5%;
+}
+ 
+body{
+ font-size:1.6rem;
+ font-family:'Roboto Mono', monospace;
+ line-height:1.25;
+ background-color:white;
+ color:#4f4f4f;
+}
+ 
+h1, h2{
+ font-size:6rem;
+ letter-spacing:1px;
+ padding:4% 0; 
+ background-color:lightblue;
+ color:orange;
+ text-align:left;
+}
+ 
+h1{
+  width:80%;
+}
+
+h1:hover{
+ color:black;
+}
+ 
+h2:hover{
+ color:black;
+}
+  
+section{
+ padding:4% 0;
+}
+
+/* END MAIN BODY STYLES */
+/* HEADER STYLES BEGIN HERE  */
+
+header {
+ background-size:cover;
+ background-position:center;
+ justify-content:space-between;
+ opacity:0.9;
+}
+
+.toptop{
+  display: flex;
+  max-width:100%;
+}
+.toptop img{
+  width:25%;
+}
+ 
+.links{
+   display:flex;
+   justify-content:space-evenly;
+   padding:1% 0;
+   background-color:orange;
+}
+ 
+nav button{
+ font-size:1.6rem;
+ width: 10%;
+ font-weight:bold;
+ letter-spacing:1px;
+ background-color:lightblue;
+ padding:0.5%;
+ border-radius:15%;
+}
+ 
+nav a:hover{
+color:#116767;
+}
+
+.hero-image{
+max-width:100%;
+margin:0 0;
+margin-top:0;
+}
+
+.hero-image:hover{
+opacity: 0.7;
+}
+
+.bottom-image:hover{
+opacity: 0.7;
+}
+
+
+/* HEADER STYLES END HERE */
+/* MAIN MARKETING SECTION STYLES HERE */
+ 
+.highlights{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-evenly;
+}
+
+.marketingtext{
+  font-size:3rem;
+  width:60%;
+}
+
+.marketingtext:hover{
+  color:orange;
+}
+
+.testimonials{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.box{
+width: 40%;
+margin:3% 4%;
+padding:2%;
+background-color:#4f4f4f;
+opacity:0.8;
+color:white;
+text-align:center;
+max-width:100%;
+}
+
+.box h4{
+  font-size:3rem;
+}
+
+.box h4:hover{
+  color:orange;
+}
+
+.box img{
+   border:1px dotted white;
+}
+
+.box img:hover{
+opacity:0.7;
+}
+ 
+.box p{
+font-weight: bold;
+}
+
+.box p:hover{
+color:orange;
+}
+
+/* MAIN MARKETING STYLES END HERE */
+/* LOGIN STYLES HERE */
+
+#login{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    max-width:100%;
+    }
+     
+.bottom-image{
+    width:100%;
+    margin:3% 3%;
+    }
+     
+.bottom-image:hover{
+    opacity: 0.7;
+    }
+
+/* LOGIN ENDS HERE */
+/* FOOTER SECTION STYLES HERE */
+ 
+footer{
+justify-content:center;
+justify-content:space-between;
+}
+
+footer .links{
+   display: flex;
+   justify-content:space-evenly;
+   padding:1% 0;
+}
+ 
+footer nav button{
+ font-size:1.6rem;
+ width:10%;
+ font-weight:bold;
+ letter-spacing:1px;
+ background-color:lightblue;
+ padding:0.5%;
+}
+ 
+footer nav a:hover{
+color:#116767;
+}
+
+/* FOOTER SECTION ENDS HERE */
+
+/* ALL RESPONSIVE DESIGN CSS BELOW */
+
+/* 800 PIXELS */
+
+@media (max-width:800px){
+    #highlights {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    justify-content:space-around;
+    justify-content:space-evenly;
+    }
+    }
+
+/* 500 PIXELS */
+
+@media (max-width:500px){
+
+header{
+    height:100%;
+    }
+  
+h1, h2{
+    font-size:3rem;
+    }
+  
+header nav{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+       }
+  
+header nav .links, footer nav .links{
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    margin:20%;
+    padding:2% 0;
+        }
+  
+.links button{
+    justify-content:space-evenly;
+    width:100%;
+    font-size:0.75rem;
+  }
+    
+.hero-image, .bottom-image{
+    width:100%;
+    margin:5% 5%;
+    justify-content:center;
+       }
+  
+.highlights{
+    justify-content:center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+  }
+
+.marketingtext{
+    font-size:2rem;
+  }  
+  
+.testimonials{
+    justify-content:center;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:75%;
+       } 
+  
+  .box h4{
+    font-size:2rem;
+  }
+  
+  .box{
+    font-size:1rem;
+  }
+  
+footer nav{
+ display:flex;
+ justify-content:center;
+ flex-direction:column;
+ flex-wrap:nowrap;
+ }
+}
