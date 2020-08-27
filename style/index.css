@@ -219,7 +219,7 @@ footer .links{
 @media (max-width:500px){
 
 header{
-    height:100%;
+    max-width:100%;
     }
   
 h1, h2{
@@ -236,20 +236,19 @@ header nav{
 header nav .links, footer nav .links{
     flex-direction:column;
     flex-wrap:nowrap;
-    justify-content:center;
+    align-items:center;
     margin:20%;
     padding:2% 0;
         }
   
 .links button{
-    justify-content:space-evenly;
-    width:100%;
+    justify-content:space-between;
+    width:40%;
     font-size:0.75rem;
   }
     
 .hero-image, .bottom-image{
-    width:100%;
-    margin:5% 5%;
+    max-width:100%;
     justify-content:center;
        }
   
@@ -264,7 +263,7 @@ header nav .links, footer nav .links{
   }  
   
 .testimonials{
-    justify-content:center;
+    align-items:center;
     flex-direction:column;
     flex-wrap:wrap;
     width:75%;
